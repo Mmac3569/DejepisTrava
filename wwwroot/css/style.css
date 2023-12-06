@@ -1,0 +1,119 @@
+﻿
+* {
+    box-sizing: border-box;
+}
+
+.collapsible, .unactive {
+    background-color: #a8750c;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 28px;
+}
+
+.active, .collapsible:hover {
+    background-color: #e29e11;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 28px;
+}
+
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: transparent;
+    font-size: 20px;
+}
+
+.archive {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.archive-active {
+    color: green;
+}
+
+.archive-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: transparent;
+    font-size: 20px;
+}
+
+body {
+    background-blend-mode: overlay;
+    background-image: url("../pozadi.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+header {
+    background-color: none;
+    text-align: center;
+    color: darkred;
+    height: auto;
+    font-size: 30px;
+}
+
+nav {
+    float: left;
+    padding-left: 2%;
+    width: 15%;
+    height: auto;
+    background-color: none;
+    font-size: 25px;
+}
+
+    nav ul {
+        list-style-type: none;
+        color: darkred;
+        padding-inline-start: 0px;
+    }
+
+article {
+    float: left;
+    padding-top: 30px;
+    width: 70%;
+    height: auto;
+    background-color: none;
+}
+
+    article p {
+        background-color: transparent;
+    }
+
+.heading {
+    background-color: #e29e11;
+    padding: 18px;
+    color: white;
+}
+
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}
+
+footer {
+    text-align: right;
+}
